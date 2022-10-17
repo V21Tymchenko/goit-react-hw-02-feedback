@@ -24,6 +24,7 @@ class App extends Component {
     const { good } = this.state;
     return `${Math.floor((good * 100) / this.countTotalFeedback())}%`;
   };
+
   render() {
     const { good, neutral, bad } = this.state;
     const options = Object.keys(this.state);
